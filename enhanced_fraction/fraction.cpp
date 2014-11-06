@@ -56,18 +56,3 @@ Fraction Fraction::divide(const Fraction& other) {
 double Fraction::toDouble() const {
   return (double)m_Numer / m_Denom;
 }
-
-int main(int argc, char *argv[]) {
-  Fraction f(3);
-  Fraction f1(1, 2);
-  Fraction f2(1, 4);
-  Fraction f3;
-  f3 = f1.add(f2);
-  std::cout << f3.toString() << std::endl;
-  f3 = f1.subtract(f2);
-  std::cout << f3.toString() << std::endl;
-  std::cout << std::showpos << f3.toDouble() << std::endl;
-  f3 = f2.subtract(f1);
-  std::cout << std::showpos << f3.toDouble() << std::endl;
-  return 0;
-}
